@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "942929207245",
+    "project_id": "bayt-al-mal-d55a8",
+    "storage_bucket": "bayt-al-mal-d55a8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:942929207245:android:8179d7f280ee742abcae84",
+        "android_client_info": {
+          "package_name": "com.example.baytalmal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCirxRISp_8_D7vfxAzeObNGgwSi2WwVY0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

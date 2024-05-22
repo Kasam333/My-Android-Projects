@@ -1,0 +1,1158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backk1"
+    tools:context=".activies.DhikrActivity">
+
+    <LinearLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            tools:layout_editor_absoluteX="15dp"
+            tools:layout_editor_absoluteY="15dp">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/leftarrow"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/white" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/afacadmedium"
+            android:text="Dhikr"
+            android:layout_marginStart="10dp"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:transitionName="logo_text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/frameLayout"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/duas_background4"
+            android:elevation="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/top_layout">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="10dp"
+                android:orientation="horizontal"
+                >
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    android:background="@drawable/dhikrbutton1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/tasbih1"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:tint="@color/purple_700" />
+
+
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Daily Dhikr - ذکر"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:textSize="17dp"
+                    android:fontFamily="@font/josefinsansmedium"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/duas_background3"
+            android:elevation="5dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/top_layout">
+
+
+
+            <LinearLayout
+            android:id="@+id/layout_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/top_layout"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:elevation="3dp"
+            android:background="@drawable/dhikrbutton3"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/top_layout">
+
+            <TextView
+                android:id="@+id/dhikr1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="12dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/afacadmedium"
+                android:text="الله أكبر"
+                android:textColor="#4E4D4D"
+                android:textSize="15sp"
+                android:transitionName="logo_text"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="#DDDADA" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="12dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/afacadmedium"
+                android:text="Allahu Akbar"
+                android:textColor="#6A6969"
+                android:textSize="15sp"
+                android:transitionName="logo_text"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="#DDDADA" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="12dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/afacadmedium"
+                android:text="Allah is The Greatest"
+                android:textColor="#6A6969"
+                android:textSize="15sp"
+                android:transitionName="logo_text"/>
+
+        </LinearLayout>
+            <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="-12dp"
+            android:src="@drawable/lineimg"/>
+
+            <LinearLayout
+                android:id="@+id/layout_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/top_layout"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="-5dp"
+                android:elevation="3dp"
+                android:background="@drawable/dhikrbutton3"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/top_layout">
+
+                <TextView
+                    android:id="@+id/dhikr2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/afacadmedium"
+                    android:text="ٱلْحَمْدُ لِلَّٰهِ"
+                    android:textColor="#4E4D4D"
+                    android:textSize="15sp"
+                    android:transitionName="logo_text"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:background="#DDDADA" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/afacadmedium"
+                    android:text="Alhamdulillah"
+                    android:textColor="#6A6969"
+                    android:textSize="15sp"
+                    android:transitionName="logo_text"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:background="#DDDADA" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/afacadmedium"
+                    android:text="All Praise is due to Allah"
+                    android:textColor="#6A6969"
+                    android:textSize="15sp"
+                    android:transitionName="logo_text"/>
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="-12dp"
+                android:src="@drawable/lineimg"/>
+
+            <LinearLayout
+                android:id="@+id/layout_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/top_layout"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="-5dp"
+                android:elevation="3dp"
+                android:background="@drawable/dhikrbutton3"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/top_layout">
+
+                <TextView
+                    android:id="@+id/dhikr3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/afacadmedium"
+                    android:text="سُبْحَانَ ٱللَّٰهِ"
+                    android:textColor="#4E4D4D"
+                    android:textSize="15sp"
+                    android:transitionName="logo_text"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:background="#DDDADA" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/afacadmedium"
+                    android:text="Subhanallah"
+                    android:textColor="#6A6969"
+                    android:textSize="15sp"
+                    android:transitionName="logo_text"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:background="#DDDADA" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/afacadmedium"
+                    android:text="Glory be to Allah"
+                    android:textColor="#6A6969"
+                    android:textSize="15sp"
+                    android:transitionName="logo_text"/>
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="-12dp"
+                android:src="@drawable/lineimg"/>
+
+            <LinearLayout
+                android:id="@+id/layout_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/top_layout"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="-5dp"
+                android:elevation="3dp"
+                android:background="@drawable/dhikrbutton3"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/top_layout">
+
+                <TextView
+                    android:id="@+id/dhikr4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/afacadmedium"
+                    android:text="اَللّٰھُمَّ صَلِّ عَلٰی مُحَمَّدٍ وَّعَلٰٓی اٰلِ مُحَمَّدٍ "
+                    android:textColor="#4E4D4D"
+                    android:textSize="15sp"
+                    android:transitionName="logo_text"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:background="#DDDADA" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/afacadmedium"
+                    android:text="Allahumma SalliI Ala Muhammadiw Wa Ala Aali Muhammad"
+                    android:textColor="#6A6969"
+                    android:textSize="15sp"
+                    android:transitionName="logo_text"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:background="#DDDADA" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/afacadmedium"
+                    android:text="O Allah, let Your Blessings come upon Muhammad and the family of Muhammad "
+                    android:textColor="#6A6969"
+                    android:textSize="15sp"
+                    android:transitionName="logo_text"/>
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="-12dp"
+                android:src="@drawable/lineimg"/>
+
+            <LinearLayout
+                android:id="@+id/layout_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/top_layout"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="-5dp"
+                android:elevation="3dp"
+                android:background="@drawable/dhikrbutton3"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/top_layout">
+
+                <TextView
+                    android:id="@+id/dhikr5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/afacadmedium"
+                    android:text="أَسْتَغْفِرُ اللّٰهَ"
+                    android:textColor="#4E4D4D"
+                    android:textSize="15sp"
+                    android:transitionName="logo_text"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:background="#DDDADA" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/afacadmedium"
+                    android:text="Astagfirullah"
+                    android:textColor="#6A6969"
+                    android:textSize="15sp"
+                    android:transitionName="logo_text"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:background="#DDDADA" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/afacadmedium"
+                    android:text="I seek Allah's forgiveness"
+                    android:textColor="#6A6969"
+                    android:textSize="15sp"
+                    android:transitionName="logo_text"/>
+
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="-12dp"
+                android:src="@drawable/lineimg"/>
+
+            <LinearLayout
+                android:id="@+id/layout_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/top_layout"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="-5dp"
+                android:elevation="3dp"
+                android:background="@drawable/dhikrbutton3"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/top_layout">
+
+                <TextView
+                    android:id="@+id/dhikr6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/afacadmedium"
+                    android:text="لا حول و لا قوات إلى بالله"
+                    android:textColor="#4E4D4D"
+                    android:textSize="15sp"
+                    android:transitionName="logo_text"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:background="#DDDADA" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/afacadmedium"
+                    android:text="La hawla wa la quwwata illa billah"
+                    android:textColor="#6A6969"
+                    android:textSize="15sp"
+                    android:transitionName="logo_text"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:background="#DDDADA" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/afacadmedium"
+                    android:text="There is no power nor strength except in God"
+                    android:textColor="#6A6969"
+                    android:textSize="15sp"
+                    android:transitionName="logo_text"/>
+
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="-12dp"
+                android:src="@drawable/lineimg"/>
+
+            <LinearLayout
+                android:id="@+id/layout_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/top_layout"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="-5dp"
+                android:elevation="3dp"
+                android:background="@drawable/dhikrbutton3"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/top_layout">
+
+                <TextView
+                    android:id="@+id/dhikr7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/afacadmedium"
+                    android:text="لا إلها اللله"
+                    android:textColor="#4E4D4D"
+                    android:textSize="15sp"
+                    android:transitionName="logo_text"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:background="#DDDADA" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/afacadmedium"
+                    android:text="La ilaha illallah"
+                    android:textColor="#6A6969"
+                    android:textSize="15sp"
+                    android:transitionName="logo_text"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:background="#DDDADA" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/afacadmedium"
+                    android:text="There is no God except Allah"
+                    android:textColor="#6A6969"
+                    android:textSize="15sp"
+                    android:transitionName="logo_text"/>
+
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="-12dp"
+                android:src="@drawable/lineimg"/>
+
+            <LinearLayout
+                android:id="@+id/layout_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/top_layout"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="-5dp"
+                android:elevation="3dp"
+                android:background="@drawable/dhikrbutton3"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/top_layout">
+
+                <TextView
+                    android:id="@+id/dhikr8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/afacadmedium"
+                    android:text="حسبناله و نامل وكيل"
+                    android:textColor="#4E4D4D"
+                    android:textSize="15sp"
+                    android:transitionName="logo_text"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:background="#DDDADA" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/afacadmedium"
+                    android:text="hasbunallahu wa ni'mal wakeel"
+                    android:textColor="#6A6969"
+                    android:textSize="15sp"
+                    android:transitionName="logo_text"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:background="#DDDADA" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/afacadmedium"
+                    android:text="Allah is Sufficient for us. He is the Best Guardian"
+                    android:textColor="#6A6969"
+                    android:textSize="15sp"
+                    android:transitionName="logo_text"/>
+
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="-12dp"
+                android:src="@drawable/lineimg"/>
+
+            <LinearLayout
+                android:id="@+id/layout_9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/top_layout"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="-5dp"
+                android:elevation="3dp"
+                android:background="@drawable/dhikrbutton3"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/top_layout">
+
+                <TextView
+                    android:id="@+id/dhikr9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/afacadmedium"
+                    android:text="يَا رَبَّ الْعَالَمِيْن"
+                    android:textColor="#4E4D4D"
+                    android:textSize="15sp"
+                    android:transitionName="logo_text"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:background="#DDDADA" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/afacadmedium"
+                    android:text="Ya Rabbul Alameen"
+                    android:textColor="#6A6969"
+                    android:textSize="15sp"
+                    android:transitionName="logo_text"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:background="#DDDADA" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/afacadmedium"
+                    android:text="O Lord of The Worlds"
+                    android:textColor="#6A6969"
+                    android:textSize="15sp"
+                    android:transitionName="logo_text"/>
+
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="-12dp"
+                android:src="@drawable/lineimg"/>
+
+            <LinearLayout
+                android:id="@+id/layout_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/top_layout"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="-5dp"
+                android:elevation="3dp"
+                android:background="@drawable/dhikrbutton3"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/top_layout">
+
+                <TextView
+                    android:id="@+id/dhikr10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/afacadmedium"
+                    android:text="يا ظل جلالي وال إكرام"
+                    android:textColor="#4E4D4D"
+                    android:textSize="15sp"
+                    android:transitionName="logo_text"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:background="#DDDADA" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/afacadmedium"
+                    android:text="Ya dhal jalali wal ikram"
+                    android:textColor="#6A6969"
+                    android:textSize="15sp"
+                    android:transitionName="logo_text"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:background="#DDDADA" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/afacadmedium"
+                    android:text="Owner of majesty and honour"
+                    android:textColor="#6A6969"
+                    android:textSize="15sp"
+                    android:transitionName="logo_text"/>
+
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="-12dp"
+                android:src="@drawable/lineimg"/>
+
+            <LinearLayout
+                android:id="@+id/layout_11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/top_layout"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="-5dp"
+                android:elevation="3dp"
+                android:background="@drawable/dhikrbutton3"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/top_layout">
+
+                <TextView
+                    android:id="@+id/dhikr11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/afacadmedium"
+                    android:text="يا قاضي أل حاجات"
+                    android:textColor="#4E4D4D"
+                    android:textSize="15sp"
+                    android:transitionName="logo_text"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:background="#DDDADA" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/afacadmedium"
+                    android:text="Ya qadhi al hajat"
+                    android:textColor="#6A6969"
+                    android:textSize="15sp"
+                    android:transitionName="logo_text"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:background="#DDDADA" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/afacadmedium"
+                    android:text="O The provider of needs"
+                    android:textColor="#6A6969"
+                    android:textSize="15sp"
+                    android:transitionName="logo_text"/>
+
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="-12dp"
+                android:src="@drawable/lineimg"/>
+
+            <LinearLayout
+                android:id="@+id/layout_12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/top_layout"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="-5dp"
+                android:elevation="3dp"
+                android:background="@drawable/dhikrbutton3"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/top_layout">
+
+                <TextView
+                    android:id="@+id/dhikr12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/afacadmedium"
+                    android:text="يا أرحم أل رحيم"
+                    android:textColor="#4E4D4D"
+                    android:textSize="15sp"
+                    android:transitionName="logo_text"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:background="#DDDADA" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/afacadmedium"
+                    android:text="Ya Arham Al Raheem"
+                    android:textColor="#6A6969"
+                    android:textSize="15sp"
+                    android:transitionName="logo_text"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:background="#DDDADA" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/afacadmedium"
+                    android:text="O Most Merciful of the Most Merciful"
+                    android:textColor="#6A6969"
+                    android:textSize="15sp"
+                    android:transitionName="logo_text"/>
+
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="-12dp"
+                android:src="@drawable/lineimg"/>
+
+            <LinearLayout
+                android:id="@+id/layout_13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/top_layout"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="-5dp"
+                android:elevation="3dp"
+                android:background="@drawable/dhikrbutton3"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/top_layout">
+
+                <TextView
+                    android:id="@+id/dhikr13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/afacadmedium"
+                    android:text="یاحي يا قيوم"
+                    android:textColor="#4E4D4D"
+                    android:textSize="15sp"
+                    android:transitionName="logo_text"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:background="#DDDADA" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/afacadmedium"
+                    android:text="Ya Hayyu Ya Qayyum"
+                    android:textColor="#6A6969"
+                    android:textSize="15sp"
+                    android:transitionName="logo_text"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:background="#DDDADA" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/afacadmedium"
+                    android:text="O the Ever-Living, The Ever-Living One"
+                    android:textColor="#6A6969"
+                    android:textSize="15sp"
+                    android:transitionName="logo_text"/>
+
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="-12dp"
+                android:src="@drawable/lineimg"/>
+
+            <LinearLayout
+                android:id="@+id/layout_14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/top_layout"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="-5dp"
+                android:elevation="3dp"
+                android:background="@drawable/dhikrbutton3"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/top_layout">
+
+                <TextView
+                    android:id="@+id/dhikr14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/afacadmedium"
+                    android:text="لا إله إيلاء الله الملك الحاقة المبين"
+                    android:textColor="#4E4D4D"
+                    android:textSize="15sp"
+                    android:transitionName="logo_text"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:background="#DDDADA" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/afacadmedium"
+                    android:text="La 'iilah 'iilaa allah almalik alhaqa almubin"
+                    android:textColor="#6A6969"
+                    android:textSize="15sp"
+                    android:transitionName="logo_text"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:background="#DDDADA" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/afacadmedium"
+                    android:text="Ther is no God but Allah, the King, the Obvious Truth"
+                    android:textColor="#6A6969"
+                    android:textSize="15sp"
+                    android:transitionName="logo_text"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+
+
+
+
+</LinearLayout>
